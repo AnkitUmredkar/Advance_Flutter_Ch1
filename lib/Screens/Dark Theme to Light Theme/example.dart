@@ -16,7 +16,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      themeMode: isDark ? ThemeMode.light : ThemeMode.dark,
+      themeMode: _isDark ? ThemeMode.light : ThemeMode.dark,
       home: SafeArea(
         child: Scaffold(
           body: Center(
@@ -25,7 +25,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
               width: width,
               margin: const EdgeInsets.all(18),
               decoration: BoxDecoration(
-                boxShadow: isDark
+                boxShadow: _isDark
                     ? [
                         const BoxShadow(
                           color: Colors.grey,
@@ -34,7 +34,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                       ]
                     : null,
                 borderRadius: BorderRadius.circular(12),
-                color: isDark ? Colors.white : Colors.white12,
+                color: _isDark ? Colors.white : Colors.white12,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +47,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                   SizedBox(height: height * 0.012),
                   Text(
                     textAlign: TextAlign.center,
-                    isDark
+                    _isDark
                         ? "It's simple example of\nlight theme"
                         : "It's simple example of\ndark theme",
                     style:
@@ -59,7 +59,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                   GestureDetector(
                     onTap: () {
                       setState(() {
-                        isDark = true;
+                        _isDark = true;
                       });
                     },
                     child: Container(
@@ -74,7 +74,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                       child: Text(
                         'Light Theme',
                         style: TextStyle(
-                            color: isDark ? Colors.black87 : Colors.white,
+                            color: _isDark ? Colors.black87 : Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: width * 0.05),
                       ),
@@ -83,7 +83,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                   GestureDetector(
                     onTap: () {
                       setState(() {
-                        isDark = false;
+                        _isDark = false;
                       });
                     },
                     child: Container(
@@ -98,7 +98,7 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
                       child: Text(
                         'Dark Theme',
                         style: TextStyle(
-                            color: isDark ? Colors.black87 : Colors.white,
+                            color: _isDark ? Colors.black87 : Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: width * 0.05),
                       ),
@@ -114,4 +114,4 @@ class _LightToDarkThemeState extends State<LightToDarkTheme> {
   }
 }
 
-bool isDark = true;
+bool _isDark = true;
