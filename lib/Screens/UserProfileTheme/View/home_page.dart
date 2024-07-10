@@ -59,7 +59,9 @@ class UserProfile extends StatelessWidget {
                       : Icons.sunny,
                   color: Theme.of(context).colorScheme.primary,
                 ),
-                title: const Text('Dark Mode'),
+                title: (userProfileProviderTrue.isDark)
+                    ? const Text('Dark Mode')
+                    : const Text('Light Mode'),
                 trailing: Switch(
                     inactiveThumbColor: Theme.of(context).colorScheme.primary,
                     activeColor: Theme.of(context).colorScheme.primary,
