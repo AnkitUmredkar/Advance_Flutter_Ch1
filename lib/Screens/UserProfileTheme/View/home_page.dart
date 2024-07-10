@@ -16,8 +16,8 @@ class UserProfile extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           leading: const Icon(Icons.arrow_back_ios),
-          actions: [
-            const Padding(
+          actions: const [
+            Padding(
               padding: EdgeInsets.only(right: 12),
               child: Icon(
                 Icons.add_circle_outline_rounded,
