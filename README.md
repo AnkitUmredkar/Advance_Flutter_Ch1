@@ -151,6 +151,34 @@
 
 ###
 
+<h1 align="center"> 🔶🔸1.4 Provider & Change Theme using Provider🔸🔶 </h1>
+
+<div align="center">
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/c93665eb-1906-4850-889d-abd5026c357c"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/c9cfde77-e69b-489d-9513-4a4d0fc8d84d"/>
+</div>
+
+###
+
+<h1 align="left"> </h1>
+
+###
+
+<div align="center">
+<video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/40461002-e7e0-4263-a23c-195a99dc6aaf"/>
+</div>
+
+###
+
+<h1 align="left"> </h1>
+
+###
+
+<div align = "center">
+<a  href="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/tree/master/lib/Screens/UserProfileTheme">-> 📂 Go To Dart File 📂<-</a>
+</div>
+
 ###
 
 <h1 align="left"> </h1>
