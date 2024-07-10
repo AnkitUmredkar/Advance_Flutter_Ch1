@@ -38,7 +38,6 @@ class MyApp extends StatelessWidget {
             onPrimary: Colors.pink,
             secondary: Colors.blue,
             onSecondary: Colors.green,
-
           ),
         ),
         themeMode: Provider.of<UserProfileClass>(context).isDark
