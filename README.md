@@ -154,9 +154,9 @@
 <h1 align="center"> 🔶🔸1.4 Provider & Change Theme using Provider🔸🔶 </h1>
 
 <div align="center">
-<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/a70b9cd9-e48f-430e-abe3-8ce513a760bf"/>
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/c93665eb-1906-4850-889d-abd5026c357c"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/d642fbce-2a71-495c-aa0f-42158d55596c"/>
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/c9cfde77-e69b-489d-9513-4a4d0fc8d84d"/>
 </div>
 
 ###
@@ -166,7 +166,7 @@
 ###
 
 <div align="center">
-<video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/74427f14-694f-4c29-9adc-b82adcc20693"/>
+<video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/40461002-e7e0-4263-a23c-195a99dc6aaf"/>
 </div>
 
 ###
