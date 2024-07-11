@@ -6,8 +6,10 @@ import 'Screens/CounterApp/Provider/home_page_provider.dart';
 import 'Screens/CounterApp/View/home_page.dart';
 import 'Screens/Dark Theme to Light Theme/example.dart';
 import 'Screens/Dark Theme to Light Theme/example_2.dart';
+import 'Screens/Quotes Data Solving Provider/Provider/quotesProvider.dart';
+import 'Screens/Quotes Data Solving Provider/View/quotesPage.dart';
 import 'Screens/Stepper/stepper_example.dart';
-import 'Screens/ThemeChanging/practice.dart';
+import 'Screens/UserProfileTheme/Model/model.dart';
 import 'Screens/UserProfileTheme/View/home_page.dart';
 
 void main() {
@@ -20,31 +22,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (BuildContext context) => UserProfileClass(),
+      create: (BuildContext context) => QuotesProvider(),
       builder: (context, child) => MaterialApp(
-        theme: ThemeData(
-          brightness: Brightness.light,
-          colorScheme: const ColorScheme.light(
-            primary: Colors.purple,
-            onPrimary: Colors.blue,
-            secondary: Colors.green,
-            onSecondary: Colors.redAccent,
-          ),
-        ),
-        darkTheme: ThemeData(
-          brightness: Brightness.dark,
-          colorScheme: const ColorScheme.dark(
-            primary: Colors.amber,
-            onPrimary: Colors.pink,
-            secondary: Colors.blue,
-            onSecondary: Colors.green,
-          ),
-        ),
-        themeMode: Provider.of<UserProfileClass>(context).isDark
-            ? ThemeMode.dark
-            : ThemeMode.light,
         debugShowCheckedModeBanner: false,
-        home: const UserProfile(),
+        // theme: MyTheme.lightTheme,
+        // darkTheme: MyTheme.darkTheme,
+        // themeMode: Provider.of<UserProfileClass>(context).isDark
+        //     ? ThemeMode.dark
+        //     : ThemeMode.light,
+        home: const QuotesPage(),
       ),
     );
   }
