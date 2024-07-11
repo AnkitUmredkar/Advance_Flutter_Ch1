@@ -185,6 +185,20 @@
 
 ###
 
+<h1 align="center"> 🔶🔸1.5 Quotes Data Solving with Provider🔸🔶 </h1>
+
+
+<div align="center">
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/b8be8559-1e09-43db-9a5b-180750a3845d"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/ab6593e6-8cc3-4f1a-acad-53121c38c23f"/>
+</div>
+
+###
+
+<h1 align="left"> </h1>
+
+###
 
 <div align="center">
 <video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/83bdae6e-f19a-4afc-af19-82660bf54d29"/>
