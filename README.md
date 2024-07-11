@@ -187,11 +187,22 @@
 
 <h1 align="center"> 🔶🔸1.5 Quotes Data Solving with Provider🔸🔶 </h1>
 
+<div align="center">
+<img height="550" align="left" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/b8be8559-1e09-43db-9a5b-180750a3845d"/>
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/ab6593e6-8cc3-4f1a-acad-53121c38c23f"/>
+<img height="550" align="right" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/22b3242d-5e2b-4753-8255-33d42ebbcbe5"/>
+</div>
+
+###
+
+<h1 align="left"> </h1>
+
+###
 
 <div align="center">
-<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/b8be8559-1e09-43db-9a5b-180750a3845d"/>
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/81075d8f-1418-4ee4-817a-293edfb2a53d"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/ab6593e6-8cc3-4f1a-acad-53121c38c23f"/>
+<img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/a5fae115-a6c0-4260-9d11-7ccc13c1b454"/>
 </div>
 
 ###
