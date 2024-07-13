@@ -1,5 +1,7 @@
 import 'package:advance_flutter_ch1/Screens/Stepper/stepper_example_2.dart';
 import 'package:advance_flutter_ch1/Screens/UserProfileTheme/Provider/homeProvider.dart';
+import 'package:advance_flutter_ch1/Screens/onBoarding/Provider/onBoardignProvidder.dart';
+import 'package:advance_flutter_ch1/Screens/onBoarding/View/introScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'Screens/CounterApp/Provider/home_page_provider.dart';
@@ -11,6 +13,7 @@ import 'Screens/Quotes Data Solving Provider/View/quotesPage.dart';
 import 'Screens/Stepper/stepper_example.dart';
 import 'Screens/UserProfileTheme/Model/model.dart';
 import 'Screens/UserProfileTheme/View/home_page.dart';
+import 'Screens/onBoarding/View/splashScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (BuildContext context) => QuotesProvider(),
+      create: (BuildContext context) => OnBoardingProvider(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         // theme: MyTheme.lightTheme,
@@ -30,7 +33,7 @@ class MyApp extends StatelessWidget {
         // themeMode: Provider.of<UserProfileClass>(context).isDark
         //     ? ThemeMode.dark
         //     : ThemeMode.light,
-        home: const QuotesPage(),
+        home: const SplashScreen(),
       ),
     );
   }
@@ -46,3 +49,7 @@ class MyApp extends StatelessWidget {
 // CounterApp()
 // todo -> UserProfile Theme Changing
 // UserProfile()
+// todo -> Quotes using Provider
+// QuotesPage()
+// todo -> onBoarding Screen Example
+// SplashScreen()
