@@ -159,7 +159,7 @@
 - The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
 
 <h2 align="left"> Provider Tree </h2>
-<h1 align="left"> </h1>
+
 <div align="center">
 <img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/ab5db672-550d-4133-bf3e-a1380c8d561d"/>
 </div>
