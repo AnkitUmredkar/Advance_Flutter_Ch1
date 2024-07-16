@@ -1,10 +1,9 @@
 import 'dart:async';
-import 'package:advance_flutter_ch1/Screens/onBoarding/Provider/onBoardignProvidder.dart';
-import 'package:advance_flutter_ch1/Screens/onBoarding/View/homePage.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-
+import '../Provider/onBoardignProvidder.dart';
+import 'homePage.dart';
 import 'introScreen.dart';
 
 class SplashScreen extends StatelessWidget {

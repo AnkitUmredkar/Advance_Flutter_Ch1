@@ -1,9 +1,8 @@
-import 'package:advance_flutter_ch1/Screens/onBoarding/Provider/onBoardignProvidder.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
+import '../Provider/onBoardignProvidder.dart';
 import 'homePage.dart';
 
 class Screen1 extends StatelessWidget {
