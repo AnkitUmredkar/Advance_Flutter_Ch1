@@ -275,7 +275,7 @@
 <h1 align="center"> 🔶🔸1.6 Contact Us Page With Interaction 🔸🔶 </h1>
 
 <div align="center">
-<img height="550" align="left" src="https://github.com/user-attachments/assets/c7742f94-8e1b-480a-8c7b-4db0a37446c6"/>
+<img height="550" src="https://github.com/user-attachments/assets/c7742f94-8e1b-480a-8c7b-4db0a37446c6"/>
 </div>
 
 <h1 align="left"> </h1>
