@@ -292,7 +292,7 @@
 
 <h1 align="left"> </h1>
 
-<h1 align="center"> 🔶🔸1.7 Photo Gallery With Biometric Authentication🔸🔶 </h1>
+<h1 align="center"> 🔶🔸1.7 Gallery Biometric Authentication🔸🔶 </h1>
 
 <div align="center">
 <img height="550" align="left" src="https://github.com/user-attachments/assets/4f7600dd-593e-4512-b711-b4c8c83689e9"/>
