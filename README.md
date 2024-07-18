@@ -318,7 +318,7 @@
 - ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
 - ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
 
- ```
+ -```
   final localAuth = LocalAuth();
   bool _didAuthenticate = false;
 
