@@ -287,12 +287,9 @@
 </div>
 
 <h1 align="left"> </h1>
-
 <div align="center">
 <video height="550" src="https://github.com/user-attachments/assets/beaba70e-cfd2-455b-9f9e-73169b7c18a2"/>
 </div>
-  
-<h1 align="left"> </h1>
   
 <div align = "center">
 <a  href="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/tree/master/lib/Screens/Contact%20Us%20Page">-> 📂 Go To Dart File 📂<-</a>
