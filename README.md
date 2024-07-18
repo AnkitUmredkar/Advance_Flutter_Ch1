@@ -317,9 +317,9 @@
 - ```stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
 - ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
 - ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
-
- -```
-  final localAuth = LocalAuth();
+ 
+```
+final localAuth = LocalAuth();
   bool _didAuthenticate = false;
 
   Future<void> _authenticate() async {
@@ -345,7 +345,8 @@
     } on PlatformException catch (e) {
       print(e); // Handle platform exceptions
     }
-  }```
+  }
+```
 
 <h1 align="center">
 <h1 align="center">
