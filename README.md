@@ -312,12 +312,12 @@
   biometricOnly: true, // Optional: Only allow biometric methods
   sensitiveDeviceNote: 'This device is sensitive and requires authentication');
 ```
-### Example :
 - ```localizedReason```: A message explaining why authentication is needed.
 - ```stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
 - ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
 - ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
- 
+
+### Example :
 ```
 final localAuth = LocalAuth();
   bool _didAuthenticate = false;
