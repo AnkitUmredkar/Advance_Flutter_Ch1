@@ -298,6 +298,19 @@
 - The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
 
 - ```
+  Future<bool> didAuthenticate = localAuth.authenticate(
+  localizedReason: 'Please authenticate to access secure data',
+  stickyAuth: true, // Optional: Remember authentication (see note)
+  biometricOnly: true, // Optional: Only allow biometric methods
+  sensitiveDeviceNote: 'This device is sensitive and requires authentication');
+```
+
+- ```localizedReason```: A message explaining why authentication is needed.
+- ```stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
+- ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
+- ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
+
+- ```
   final localAuth = LocalAuth();
   bool _didAuthenticate = false;
 
@@ -326,6 +339,7 @@
     }
   }```
 
+<h1 align="center">
 <h1 align="center">
 
 <div align="center">
