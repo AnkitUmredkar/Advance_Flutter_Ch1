@@ -302,7 +302,7 @@
 
 <h1 align="center"> 🔶🔸1.7 Gallery Biometric Authentication🔸🔶 </h1>
 
-## Local Authentication Package :
+## local_auth Package :
 - The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
 
  ```
