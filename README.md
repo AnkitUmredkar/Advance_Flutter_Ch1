@@ -280,8 +280,7 @@
 - Make Phone Calls: It can dial a phone number using the phone app.
 - Send Emails: It can open the email app with a pre-filled email.
 - Send SMS: It can open the messaging app to send a text message.
-- 
-<h1 align="center">
+
 <h1 align="center">
 <div align="center">
 <img height="550" src="https://github.com/user-attachments/assets/c7742f94-8e1b-480a-8c7b-4db0a37446c6"/>
