@@ -44,6 +44,8 @@ dependencies:
   url_launcher: ^6.3.0
   share_plus: ^9.0.0
   font_awesome_flutter: ^10.7.0
+  local_auth: ^2.2.0
+  fluttertoast: ^8.2.6
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +76,9 @@ flutter:
   assets:
     - assets/images/UserProfile/
     - assets/images/onBoardingScreen/
+    - assets/images/GalleryImages/
+    - assets/images/GalleryImages/HideFolderImages/
+    - assets/images/GalleryImages/HideFolderImages2/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

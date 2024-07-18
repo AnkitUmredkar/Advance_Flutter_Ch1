@@ -5,6 +5,8 @@ import 'Screens/Contact Us Page/Provider/contactProvider.dart';
 import 'Screens/Contact Us Page/View/contact_us_page.dart';
 import 'Screens/Dark Theme to Light Theme/example.dart';
 import 'Screens/Dark Theme to Light Theme/example_2.dart';
+import 'Screens/Gallery With Biometric Authentication/Provider/galleryProvider.dart';
+import 'Screens/Gallery With Biometric Authentication/View/Gallery_biometric_authentication.dart';
 import 'Screens/On Boarding/Provider/onBoardignProvidder.dart';
 import 'Screens/On Boarding/View/splashScreen.dart';
 import 'Screens/Quotes Data Solving Provider/Provider/quotesProvider.dart';
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (BuildContext context) => ContactProvider(),
+      create: (BuildContext context) => GalleryProvider(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         // theme: MyTheme.lightTheme,
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         // themeMode: Provider.of<UserProfileClass>(context).isDark
         //     ? ThemeMode.dark
         //     : ThemeMode.light,
-        home: const ContactUsPage(),
+        home: const GalleryBiometricAuthentication(),
       ),
     );
   }
@@ -51,3 +53,5 @@ class MyApp extends StatelessWidget {
 // SplashScreen()
 // todo -> Contact Us Page
 // SplashScreen()
+// todo -> Gallery with Biometric Authentication
+// GalleryBiometricAuthentication()
