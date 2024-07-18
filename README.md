@@ -291,3 +291,19 @@
 </div>
 
 <h1 align="left"> </h1>
+
+<h1 align="center"> 🔶🔸1.7 Gallery Biometric Authentication🔸🔶 </h1>
+
+<div align="center">
+<img height="550" align="left" src="https://github.com/user-attachments/assets/4f7600dd-593e-4512-b711-b4c8c83689e9"/>
+<img height="550" src="https://github.com/user-attachments/assets/20b2e75c-39fc-4e91-b99a-d0e90e4b3332"/>
+<img height="550" align="right" src="https://github.com/user-attachments/assets/c0d988a5-c046-42a3-b2e1-4a8fcff9b368"/>
+</div>
+
+<h1 align="left"> </h1>
+
+<div align="center">
+<video height="550" src="https://github.com/user-attachments/assets/83063c18-801e-4a9e-893d-3153f15ad79d"/>
+</div>
+
+<h1 align="left"> </h1>
