@@ -274,6 +274,14 @@
 
 <h1 align="center"> 🔶🔸1.6 Contact Us Page With Interaction 🔸🔶 </h1>
 
+# url_launcher Package :
+### In Flutter, url_launcher is a package that allows your app to open URLs in a browser or other apps.
+- Open Web Links: It can open web pages in the default browser.
+- Make Phone Calls: It can dial a phone number using the phone app.
+- Send Emails: It can open the email app with a pre-filled email.
+- Send SMS: It can open the messaging app to send a text message.
+<h1 align="center">
+<h1 align="center">
 <div align="center">
 <img height="550" src="https://github.com/user-attachments/assets/c7742f94-8e1b-480a-8c7b-4db0a37446c6"/>
 </div>
@@ -297,20 +305,20 @@
 ## Local Authentication Package :
 - The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
 
-- ```
+ ```
   Future<bool> didAuthenticate = localAuth.authenticate(
   localizedReason: 'Please authenticate to access secure data',
   stickyAuth: true, // Optional: Remember authentication (see note)
   biometricOnly: true, // Optional: Only allow biometric methods
   sensitiveDeviceNote: 'This device is sensitive and requires authentication');
 ```
-
+### Example :
 - ```localizedReason```: A message explaining why authentication is needed.
 - ```stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
 - ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
 - ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
 
-- ```
+ ```
   final localAuth = LocalAuth();
   bool _didAuthenticate = false;
 
