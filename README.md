@@ -280,6 +280,7 @@
 - Make Phone Calls: It can dial a phone number using the phone app.
 - Send Emails: It can open the email app with a pre-filled email.
 - Send SMS: It can open the messaging app to send a text message.
+- 
 <h1 align="center">
 <h1 align="center">
 <div align="center">
@@ -303,9 +304,9 @@
 <h1 align="center"> 🔶🔸1.7 Gallery Biometric Authentication🔸🔶 </h1>
 
 ## local_auth Package :
-- The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
+- The local_auth package, provided by the Flutter team, enables you to integrate local authentication methods like fingerprint, Touch ID, Face ID, passcode, PIN, or pattern recognition into your Flutter app. This enhances security by allowing users to authenticate themselves using their device's built-in features instead of relying solely on passwords.
 
- ```
+```
   Future<bool> didAuthenticate = localAuth.authenticate(
   localizedReason: 'Please authenticate to access secure data',
   stickyAuth: true, // Optional: Remember authentication (see note)
