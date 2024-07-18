@@ -294,6 +294,40 @@
 
 <h1 align="center"> 🔶🔸1.7 Gallery Biometric Authentication🔸🔶 </h1>
 
+## Local Authentication Package :
+- The Consumer widget has two main purposes: It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.
+
+- ```
+  final localAuth = LocalAuth();
+  bool _didAuthenticate = false;
+
+  Future<void> _authenticate() async {
+    List<BiometricType> availableBiometrics;
+    try {
+      availableBiometrics = await localAuth.getAvailableBiometrics();
+    } on PlatformException catch (e) {
+      print(e); // Handle platform exceptions
+      return;
+    }
+
+    if (availableBiometrics.isEmpty) {
+      // Show a message if no biometric methods are available
+      return;
+    }
+
+    try {
+      final didAuthenticate = await localAuth.authenticate(
+        localizedReason: 'Please authenticate to access secure data',
+        stickyAuth: true,
+      );
+      setState(() => _didAuthenticate = didAuthenticate);
+    } on PlatformException catch (e) {
+      print(e); // Handle platform exceptions
+    }
+  }```
+
+<h1 align="center">
+
 <div align="center">
 <img height="550" align="left" src="https://github.com/user-attachments/assets/4f7600dd-593e-4512-b711-b4c8c83689e9"/>
 <img height="550" src="https://github.com/user-attachments/assets/20b2e75c-39fc-4e91-b99a-d0e90e4b3332"/>
