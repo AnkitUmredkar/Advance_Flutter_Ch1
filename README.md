@@ -152,7 +152,7 @@
 # State Management 
 ## What is State Management in Flutter :
 
-- ```State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.``` 
+- ```bash State management in Dart and Flutter is all about managing the data that the app will render and how it will respond to user input.``` 
 
 ##  State :
 - State is information that (1) can be read synchronously when the widget is built and (2) might change during the lifetime of the widget..
@@ -164,10 +164,12 @@
 - ```Provider is a powerful state management solution in Flutter, offering a simple way to manage and share state across your application```.
 
 ## Provider package :
-- ```dependencies :
+- ```bash
+  dependencies :
   flutter:
     sdk: flutter
-  provider: ^6.0.0  # Check for the latest version``
+  provider: ^6.0.0  # Check for the latest version
+  ```
 
 ## ChangeNotifier Class  :
 - ChangeNotifier is a simple class included in the Flutter SDK which provides change notification to its listeners.
@@ -323,20 +325,20 @@
 ## local_auth Package :
 - The local_auth package, provided by the Flutter team, enables you to integrate local authentication methods like fingerprint, Touch ID, Face ID, passcode, PIN, or pattern recognition into your Flutter app. This enhances security by allowing users to authenticate themselves using their device's built-in features instead of relying solely on passwords.
 
-```
+```bash
   Future<bool> didAuthenticate = localAuth.authenticate(
   localizedReason: 'Please authenticate to access secure data',
   stickyAuth: true, // Optional: Remember authentication (see note)
   biometricOnly: true, // Optional: Only allow biometric methods
   sensitiveDeviceNote: 'This device is sensitive and requires authentication');
 ```
-- ```localizedReason```: A message explaining why authentication is needed.
-- ```stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
-- ```biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
-- ```sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
+- ```bash localizedReason```: A message explaining why authentication is needed.
+- ```bash stickyAuth (optional)```: If `true`, the OS might prompt for authentication again when the app resumes from the background (useful for sensitive data).
+- ```bash biometricOnly (optional)```: If `true`, only biometric methods (fingerprint, Face ID) are allowed.
+- ```bash sensitiveDeviceNote (optional, Android-only)```: A message displayed when using fingerprint authentication on insecure devices.
 
 ### Example :
-```
+```bash
 final localAuth = LocalAuth();
   bool _didAuthenticate = false;
 
