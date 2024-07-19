@@ -60,34 +60,101 @@
 <img height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/65f1a157-fc15-4c1b-9640-ece1f86f310c"/>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <div align="center">
 <video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/3d36fb2c-a193-46da-ae96-ea2ce7a39112"/>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <div align = "center">
 <a  href="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/blob/master/lib/Screens/Dark%20Theme%20to%20Light%20Theme/example_2.dart">-> 📂 Go To Dart File 📂<-</a>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <h1 align="center"> 🔶🔸1.2 Stepper Widget Example 1🔸🔶 </h1>
 
+## Stepper Widget
+
+-  ```bash Flutter Stepper widget``` :  This widget provides a smooth, guided experience for multi-step forms, allowing users to navigate through each step with ease. Perfect for any app requiring structured data input, the Stepper widget enhances user experience with its intuitive design and seamless functionality.
+
+## Properties of Stepper Widget :
+
+- ```steps``` : List of Step objects that define each individual step in the stepper. Each Step typically contains a title and content.
+
+- ```currentStep``` : Integer that represents the current active step. This is used to control which step is currently displayed and allows users to navigate forward and backward through the steps.
+
+- ```onStepContinue``` : Callback function that is called when the user taps the "Continue" button on an active step. You typically increment the currentStep in this callback to move forward.
+
+- ```onStepCancel``` : Callback function that is called when the user taps the "Cancel" button on an active step. You typically decrement the currentStep in this callback to move backward.
+
+- ```onStepTapped``` : Callback function that is called when the user taps on a step's header. It is useful for handling custom behavior when a step is directly selected.
+
+- ```controlsBuilder``` : Optional builder function to customize the appearance of the buttons (e.g., "Next", "Back").
+
+- ```type``` : Enum that specifies the type of stepper: StepperType.vertical for a vertical layout and StepperType.horizontal (default) for a horizontal layout.
+
+## Example :
+
+```bash
+Stepper(
+            physics: const BouncingScrollPhysics(),
+            currentStep: _currentStep,
+            onStepCancel: () {
+              setState(() {
+                if (_currentStep > 0) {
+                  _currentStep--;
+                } else {
+                  _currentStep = 2;
+                }
+              });
+            },
+            onStepContinue: () {
+              setState(() {
+                if (_currentStep != 2) {
+                  _currentStep++;
+                } else {
+                  _currentStep = 0;
+                }
+              });
+            },
+            onStepTapped: (int newIndex) {
+              setState(() {
+                _currentStep = newIndex;
+              });
+            },
+            steps: [
+              Step(
+                  isActive: _currentStep == 0,
+                  title: Text('Account'),
+                  content: TextField(
+                    cursorColor: Colors.blue.shade600,
+                    controller: accountCtrl,
+                    decoration: InputDecoration(hintText: 'Account Number'),
+                  )),
+              Step(
+                  isActive: _currentStep == 1,
+                  title: Text('Address'),
+                  content: TextField(
+                    cursorColor: Colors.blue.shade600,
+                    controller: addressCtrl,
+                    decoration: InputDecoration(hintText: 'Address'),
+                  )),
+              Step(
+                  isActive: _currentStep == 2,
+                  title: Text('Mobile Number'),
+                  content: TextField(
+                    cursorColor: Colors.blue.shade600,
+                    controller: mobileCtrl,
+                    decoration: InputDecoration(hintText: 'Mobile Number'),
+                  )),
+            ],
+          ),
+```
+
+<h1 align="center"> </h1>
 
 <div align="center">
 <img height="550" align="left" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/bcfa7a7d-0587-46e5-940a-1a60545093ed"/>
@@ -95,35 +162,175 @@
 <img height="550" align="right" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/e38b0faa-43d1-4bdf-92a9-e85f4e846e4c"/>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <div align="center">
 <video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/4e5fdc5d-707e-4522-b3fe-9d2a988646ea"/>
 </div>
 
-
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <div align = "center">
 <a  href="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/blob/master/lib/Screens/Stepper/stepper_example.dart">-> 📂 Go To Dart File 📂<-</a>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <h1 align="center"> 🔶🔸1.2 Stepper Widget Example 2🔸🔶 </h1>
 
+## Example :
+
+```bash
+Stepper(
+            type: StepperType.horizontal,
+            physics: const BouncingScrollPhysics(),
+            currentStep: _currentStep,
+            onStepCancel: () {
+              setState(() {
+                if (_currentStep > 0) {
+                  _currentStep--;
+                } else {
+                  _currentStep = 2;
+                }
+              });
+            },
+            onStepContinue: () {
+              setState(() {
+                if (_currentStep != 2) {
+                  _currentStep++;
+                } else {
+                  _currentStep = 0;
+                }
+              });
+            },
+            onStepTapped: (int newIndex) {
+              setState(() {
+                _currentStep = newIndex;
+              });
+            },
+            controlsBuilder: (BuildContext context, ControlsDetails details) {
+              return Padding(
+                padding: const EdgeInsets.only(top: 11),
+                child: Row(
+                  children: [
+                    if (_currentStep == 2)
+                      FilledButton(
+                        onPressed: details.onStepContinue,
+                        child: const Text('Upload'),
+                      )
+                    else
+                      FilledButton(
+                        onPressed: details.onStepContinue,
+                        child: const Text('Continue'),
+                      ),
+                    const SizedBox(width: 8),
+                    if (_currentStep >= 0)
+                      ElevatedButton(
+                        onPressed: details.onStepCancel,
+                        child: const Text(
+                          'Cancel',
+                          style: TextStyle(color: Colors.black87),
+                        ),
+                      ),
+                  ],
+                ),
+              );
+            },
+            steps: [
+              Step(
+                isActive: _currentStep == 0,
+                title: const Text('Personal'),
+                content: Column(
+                  children: [
+                    buildTextField(
+                        'First Name', 1, firstNameCtrl, Icons.person),
+                    const SizedBox(height: 15),
+                    buildTextField('Last name', 1, lastNameCtrl, Icons.person),
+                  ],
+                ),
+              ),
+              Step(
+                isActive: _currentStep == 1,
+                title: const Text('Contect'),
+                content: Column(
+                  children: [
+                    buildTextField('E-mail', 1, emailCtrl, Icons.email),
+                    const SizedBox(height: 15),
+                    buildTextField('Address', 3, addressCtrl, Icons.home),
+                    const SizedBox(height: 15),
+                    buildTextField('Mobile Number', 1, mobileCtrl, Icons.phone),
+                  ],
+                ),
+              ),
+              Step(
+                isActive: _currentStep == 2,
+                title: const Text('Upload'),
+                content: Column(
+                  children: [
+                    Row(
+                      children: [
+                        const Text(
+                          'Name     : ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Text(
+                          '${firstNameCtrl.text} ${lastNameCtrl.text}',
+                          style: const TextStyle(fontSize: 18),
+                        )
+                      ],
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Address : ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Expanded(
+                            child: Text(
+                          addressCtrl.text.toString(),
+                          style: const TextStyle(fontSize: 18),
+                        ))
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        const Text(
+                          'Mobile   : ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Text(
+                          mobileCtrl.text.toString(),
+                          style: const TextStyle(fontSize: 18),
+                        )
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        const Text(
+                          'E-mail    : ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Expanded(
+                            child: Container(
+                                child: Text(
+                          emailCtrl.text.toString(),
+                          style: const TextStyle(fontSize: 18),
+                        )))
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+```
+
+<h1 align="left"> </h1>
 
 <div align="center">
 <img height="550" align="left" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/82c0eca6-6f60-46f3-8a27-b9a69696ccab"/>
