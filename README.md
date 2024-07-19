@@ -463,15 +463,39 @@ Stepper(
 
 <h1 align="center"> 🔶🔸1.5 onBoarding Screen in Flutter 🔸🔶 </h1>
 
-## Stepper Widget
+# How can achieve one time intro screen ?
 
-# shared_preferences Package :
-### Using shared_preferences simplifies persistent data storage in Flutter apps, enhancing user experience by retaining preferences and settings across app restarts..
+- It is achieve by shared_preferences Package. Using shared_preferences simplifies persistent data storage in Flutter apps, enhancing user experience by retaining preferences and settings across app restarts.
+### Properties :
 - Initialization: Obtain an instance of SharedPreferences asynchronously:
 - Storing Data: Save data using methods like setBool, setInt, setString, etc.:
 - Fetching Data: Retrieve stored data using corresponding get methods:
 - Removing Data: Delete specific data using remove:
 - Clearing All Data: Remove all stored data using clear:
+
+## Example : 
+### Provider Class
+```bash
+Future<void> setOnBoarding(bool isShow)async {
+    sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.setBool('show',isShow);
+  }
+
+  void removeScreen(){
+    isShow = true;
+    setOnBoarding(isShow);
+    notifyListeners();
+  }
+
+  Future<void> getOnBoarding()async {
+    sharedPreferences = await SharedPreferences.getInstance();
+    isShow = sharedPreferences.getBool('show') ?? false;
+  }
+
+  OnBoardingProvider(){
+    getOnBoarding();
+  }
+```
 
 <h1 align="left"> </h1>
 
