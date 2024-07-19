@@ -18,7 +18,39 @@
 <div align = "center">
 <a  href="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/blob/master/lib/Screens/Dark%20Theme%20to%20Light%20Theme/example.dart">-> 📂 Go To Dart File 📂<-</a>
 </div>
+  
+<h1 align="left"> </h1> 
+## Material app :
+  
+```bash
+     darkTheme: ThemeData.dark(),
+    theme: ThemeData.light(),
+    themeMode: isDark?ThemeMode.dark:ThemeMode.light,
+```
 
+## Home Page :
+```bash
+     GestureDetector(
+                onTap: () {
+                  setState(() {
+                    isDark=false;
+                  });
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    height:115,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                    color: colorYellow,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    alignment: Alignment.center,
+                    child: Text('Light Icon',style: TextStyle(color: isDark?Colors.white:Colors.black,fontWeight: FontWeight.bold,fontSize: 25),),
+                  ),
+                ),
+             ),
+```
 <h1 align="left"> </h1>
 
 <div align="center">
