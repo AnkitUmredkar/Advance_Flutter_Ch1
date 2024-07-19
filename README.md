@@ -459,13 +459,21 @@ Stepper(
 <video height="550" src="https://github.com/AnkitUmredkar/Advance_Flutter_Ch1/assets/149374001/83bdae6e-f19a-4afc-af19-82660bf54d29"/>
 </div>
 
-###
-
 <h1 align="left"> </h1>
 
-###
-
 <h1 align="center"> 🔶🔸1.5 onBoarding Screen in Flutter 🔸🔶 </h1>
+
+## Stepper Widget
+
+# shared_preferences Package :
+### Using shared_preferences simplifies persistent data storage in Flutter apps, enhancing user experience by retaining preferences and settings across app restarts..
+- Initialization: Obtain an instance of SharedPreferences asynchronously:
+- Storing Data: Save data using methods like setBool, setInt, setString, etc.:
+- Fetching Data: Retrieve stored data using corresponding get methods:
+- Removing Data: Delete specific data using remove:
+- Clearing All Data: Remove all stored data using clear:
+
+<h1 align="left"> </h1>
 
 <div align="center">
 <img height="550" align="left" src="https://github.com/user-attachments/assets/6041cfa1-7a9a-4251-addf-a9445f587acc"/>
@@ -473,11 +481,7 @@ Stepper(
 <img height="550" align="right" src="https://github.com/user-attachments/assets/86879010-167c-4a21-934e-3a0bae00ae8b"/>
 </div>
 
-###
-
 <h1 align="left"> </h1>
-
-###
 
 <div align="center">
 <img height="550" src="https://github.com/user-attachments/assets/e13f2465-5223-424f-9796-d3d4fa37ea3d"/>
